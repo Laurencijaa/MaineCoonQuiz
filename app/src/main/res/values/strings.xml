@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Maine Coon Quiz</string>
+    <string name="main_question">Maine coon is a cat breed which brings to your home not only fluffiness, but wonderful personality as well.\n
+        Let us see if you might be ready for that!?
+    </string>
+    <string name="start">start</string>
+</resources>
