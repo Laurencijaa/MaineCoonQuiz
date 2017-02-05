@@ -3,5 +3,15 @@
     <string name="main_question">Maine coon is a cat breed which brings to your home not only fluffiness, but wonderful personality as well.\n
         Let us see if you might be ready for that!?
     </string>
-    <string name="start">start</string>
+    <string name="start">start quiz</string>
+    <string name="question1">1. What is an average weight of maine coon male cat?</string>
+    <string name="question1_option1">What is an average weight of maine coon male cat?</string>
+    <string name="question1_option2">What is an average weight of maine coon male cat?</string>
+    <string name="question1_option3">What is an average weight of maine coon male cat?</string>
+    <string name="question1_option4">What is an average weight of maine coon male cat?</string>
+    <string name="question2"></string>
+    <string name="question3"></string>
+    <string name="question4"></string>
+    <string name="question5"></string>
+    <string name="question6"></string>
 </resources>

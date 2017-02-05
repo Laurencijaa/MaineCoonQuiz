@@ -4,22 +4,23 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
+    android:background="@color/colorBackground"
     android:orientation="vertical"
     tools:context="lt.laurencija.mainecoonquiz.MainActivity">
 
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_height="@dimen/main_picture_height"
         android:scaleType="centerCrop"
         android:src="@drawable/vega1"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:textSize="20sp"
+        android:layout_margin="@dimen/main_margin"
+        android:textSize="@dimen/textSize_mainQuestion"
+        android:textColor="@color/colorPrimary"
+        android:gravity="center_horizontal"
         android:text="@string/main_question"/>
 
     <Button
@@ -27,6 +28,7 @@
         android:layout_height="wrap_content"
         android:text="@string/start"
         android:layout_gravity="center_horizontal"
+        android:textColor="@color/colorBackground"
         android:onClick="startQuiz"/>
 
 </LinearLayout>
