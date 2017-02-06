@@ -29,7 +29,7 @@ public class QuizActivity extends AppCompatActivity {
         boolean checked = ((RadioButton) view).isChecked();
 
         // Check which radio button was clicked
-        switch(view.getId()) {
+        switch (view.getId()) {
             case R.id.radio_1_1:
                 if (checked)
                     //incorrect answer, no points
@@ -57,7 +57,7 @@ public class QuizActivity extends AppCompatActivity {
         boolean checked = ((RadioButton) view).isChecked();
 
         // Check which radio button was clicked
-        switch(view.getId()) {
+        switch (view.getId()) {
             case R.id.radio_2_1:
                 if (checked)
                     //incorrect answer, no points
@@ -85,7 +85,7 @@ public class QuizActivity extends AppCompatActivity {
         boolean checked = ((RadioButton) view).isChecked();
 
         // Check which radio button was clicked
-        switch(view.getId()) {
+        switch (view.getId()) {
             case R.id.radio_3_1:
                 if (checked)
                     //incorrect answer, no points
@@ -113,7 +113,7 @@ public class QuizActivity extends AppCompatActivity {
         boolean checked = ((RadioButton) view).isChecked();
 
         // Check which radio button was clicked
-        switch(view.getId()) {
+        switch (view.getId()) {
             case R.id.radio_4_1:
                 if (checked)
                     //incorrect answer, no points
@@ -141,7 +141,7 @@ public class QuizActivity extends AppCompatActivity {
         boolean checked = ((RadioButton) view).isChecked();
 
         // Check which radio button was clicked
-        switch(view.getId()) {
+        switch (view.getId()) {
             case R.id.radio_5_1:
                 if (checked)
                     //incorrect answer, no points
@@ -169,7 +169,7 @@ public class QuizActivity extends AppCompatActivity {
         boolean checked = ((RadioButton) view).isChecked();
 
         // Check which radio button was clicked
-        switch(view.getId()) {
+        switch (view.getId()) {
             case R.id.radio_6_1:
                 if (checked)
                     //incorrect answer, no points
@@ -192,53 +192,56 @@ public class QuizActivity extends AppCompatActivity {
     }
 
     //add checking if all radio buttons were clicked (make boolean null and add checking if not null)
-    private int countResult(){
+    private int countResult() {
         int result = 0;
 
-        if (checkforUnanswered().equals("")){
-            if (question1Correct) result+=1;
-            if (question2Correct) result+=1;
-            if (question3Correct) result+=1;
-            if (question4Correct) result+=1;
-            if (question5Correct) result+=1;
-            if (question6Correct) result+=1;
-            return result;
-        } else {
-            Toast toast = Toast.makeText(getApplicationContext(), checkforUnanswered(), Toast.LENGTH_LONG);
-            return result;
-        }
-
+        if (question1Correct) result += 1;
+        if (question2Correct) result += 1;
+        if (question3Correct) result += 1;
+        if (question4Correct) result += 1;
+        if (question5Correct) result += 1;
+        if (question6Correct) result += 1;
+        return result;
 
     }
 
-    private String checkforUnanswered(){
+
+    private String checkforUnanswered() {
         String userAlert = "";
 
         RadioGroup question1 = (RadioGroup) findViewById(R.id.question1);
         if (question1.getCheckedRadioButtonId() == -1) userAlert += "Please answer question 1";
 
         RadioGroup question2 = (RadioGroup) findViewById(R.id.question2);
-        if (question1.getCheckedRadioButtonId() == -1) userAlert += "Please answer question 2";
+        if (question2.getCheckedRadioButtonId() == -1) userAlert += "\nPlease answer question 2";
 
         RadioGroup question3 = (RadioGroup) findViewById(R.id.question3);
-        if (question3.getCheckedRadioButtonId() == -1) userAlert += "Please answer question 3";
+        if (question3.getCheckedRadioButtonId() == -1) userAlert += "\nPlease answer question 3";
 
         RadioGroup question4 = (RadioGroup) findViewById(R.id.question4);
-        if (question1.getCheckedRadioButtonId() == -1) userAlert += "Please answer question 4";
+        if (question4.getCheckedRadioButtonId() == -1) userAlert += "\nPlease answer question 4";
 
         RadioGroup question5 = (RadioGroup) findViewById(R.id.question5);
-        if (question5.getCheckedRadioButtonId() == -1) userAlert += "Please answer question 5";
+        if (question5.getCheckedRadioButtonId() == -1) userAlert += "\nPlease answer question 5";
 
         RadioGroup question6 = (RadioGroup) findViewById(R.id.question6);
-        if (question1.getCheckedRadioButtonId() == -1) userAlert += "Please answer question 6";
+        if (question6.getCheckedRadioButtonId() == -1) userAlert += "\nPlease answer question 6";
 
         return userAlert;
 
     }
 
-    public void checkResult(View view){
-        int result = countResult();
-        System.out.println(result);
+    public void checkResult(View view) {
+
+        if (checkforUnanswered().equals("")) {
+            int result = countResult();
+            System.out.println(result);
+        } else {
+            String userAlert = checkforUnanswered();
+            Toast toast = Toast.makeText(getApplicationContext(), userAlert, Toast.LENGTH_LONG);
+            toast.show();
+        }
+
     }
 
 }
