@@ -18,8 +18,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/main_margin"
-        android:textSize="@dimen/textSize_mainQuestion"
-        android:textColor="@color/colorPrimary"
+        style="@style/TextStyle_questions"
         android:gravity="center_horizontal"
         android:text="@string/main_question"/>
 
@@ -27,8 +26,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/start"
+        style="@style/buttonStyle"
         android:layout_gravity="center_horizontal"
-        android:textColor="@color/colorBackground"
         android:onClick="startQuiz"/>
 
 </LinearLayout>

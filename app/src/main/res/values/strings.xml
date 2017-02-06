@@ -34,5 +34,7 @@
     <string name="question6_option2">What is an average weight of maine coon male cat?</string>
     <string name="question6_option3">What is an average weight of maine coon male cat?</string>
     <string name="question6_option4">What is an average weight of maine coon male cat?</string>
+    <string name="finish">finish</string>
+    <string name="score">your score:</string>
 
 </resources>

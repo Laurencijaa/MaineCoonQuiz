@@ -22,4 +22,16 @@
         <item name="android:fontFamily">sans-serif</item>
     </style>
 
+    <style name="TextStyle_statements">
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textSize">34sp</item>
+        <item name="android:fontFamily">sans-serif-smallcaps</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="buttonStyle">
+        <item name="android:textColor">@color/colorBackground</item>
+        <item name="android:fontFamily">sans-serif-smallcaps</item>
+    </style>
+
 </resources>
