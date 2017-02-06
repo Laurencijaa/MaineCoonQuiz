@@ -4,16 +4,18 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.RadioButton;
+import android.widget.RadioGroup;
+import android.widget.Toast;
 
 
 public class QuizActivity extends AppCompatActivity {
 
-    private boolean question1Correct = false;
-    private boolean question2Correct = false;
-    private boolean question3Correct = false;
-    private boolean question4Correct = false;
-    private boolean question5Correct = false;
-    private boolean question6Correct = false;
+    private boolean question1Correct;
+    private boolean question2Correct;
+    private boolean question3Correct;
+    private boolean question4Correct;
+    private boolean question5Correct;
+    private boolean question6Correct;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -192,13 +194,46 @@ public class QuizActivity extends AppCompatActivity {
     //add checking if all radio buttons were clicked (make boolean null and add checking if not null)
     private int countResult(){
         int result = 0;
-        if (question1Correct) result+=1;
-        if (question2Correct) result+=1;
-        if (question3Correct) result+=1;
-        if (question4Correct) result+=1;
-        if (question5Correct) result+=1;
-        if (question6Correct) result+=1;
-        return result;
+
+        if (checkforUnanswered().equals("")){
+            if (question1Correct) result+=1;
+            if (question2Correct) result+=1;
+            if (question3Correct) result+=1;
+            if (question4Correct) result+=1;
+            if (question5Correct) result+=1;
+            if (question6Correct) result+=1;
+            return result;
+        } else {
+            Toast toast = Toast.makeText(getApplicationContext(), checkforUnanswered(), Toast.LENGTH_LONG);
+            return result;
+        }
+
+
+    }
+
+    private String checkforUnanswered(){
+        String userAlert = "";
+
+        RadioGroup question1 = (RadioGroup) findViewById(R.id.question1);
+        if (question1.getCheckedRadioButtonId() == -1) userAlert += "Please answer question 1";
+
+        RadioGroup question2 = (RadioGroup) findViewById(R.id.question2);
+        if (question1.getCheckedRadioButtonId() == -1) userAlert += "Please answer question 2";
+
+        RadioGroup question3 = (RadioGroup) findViewById(R.id.question3);
+        if (question3.getCheckedRadioButtonId() == -1) userAlert += "Please answer question 3";
+
+        RadioGroup question4 = (RadioGroup) findViewById(R.id.question4);
+        if (question1.getCheckedRadioButtonId() == -1) userAlert += "Please answer question 4";
+
+        RadioGroup question5 = (RadioGroup) findViewById(R.id.question5);
+        if (question5.getCheckedRadioButtonId() == -1) userAlert += "Please answer question 5";
+
+        RadioGroup question6 = (RadioGroup) findViewById(R.id.question6);
+        if (question1.getCheckedRadioButtonId() == -1) userAlert += "Please answer question 6";
+
+        return userAlert;
+
     }
 
     public void checkResult(View view){
