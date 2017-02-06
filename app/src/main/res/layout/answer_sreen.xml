@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:background="@color/colorBackground">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@id/result"
-        android:layout_centerHorizontal="true"
-        android:layout_margin="@dimen/main_margin"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/main_picture_height"
+        android:layout_marginBottom="@dimen/main_margin"
         style="@style/TextStyle_statements"
         android:text="@string/score"/>
 
@@ -17,8 +18,7 @@
         android:id="@+id/result"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
+        android:layout_gravity="center_horizontal"
         style="@style/TextStyle_statements"/>
 
-</RelativeLayout>
+</LinearLayout>

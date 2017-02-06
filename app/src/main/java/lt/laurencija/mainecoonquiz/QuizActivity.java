@@ -1,5 +1,6 @@
 package lt.laurencija.mainecoonquiz;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -234,8 +235,9 @@ public class QuizActivity extends AppCompatActivity {
     public void checkResult(View view) {
 
         if (checkforUnanswered().equals("")) {
-            int result = countResult();
-            System.out.println(result);
+            Intent intent = new Intent(this, AnswerActivity.class);
+            intent.putExtra("RESULT", countResult());
+            startActivity(intent);
         } else {
             String userAlert = checkforUnanswered();
             Toast toast = Toast.makeText(getApplicationContext(), userAlert, Toast.LENGTH_LONG);
