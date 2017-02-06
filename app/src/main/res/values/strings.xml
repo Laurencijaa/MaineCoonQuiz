@@ -9,9 +9,30 @@
     <string name="question1_option2">What is an average weight of maine coon male cat?</string>
     <string name="question1_option3">What is an average weight of maine coon male cat?</string>
     <string name="question1_option4">What is an average weight of maine coon male cat?</string>
-    <string name="question2"></string>
-    <string name="question3"></string>
-    <string name="question4"></string>
-    <string name="question5"></string>
-    <string name="question6"></string>
+    <string name="question2">2. Second question</string>
+    <string name="question2_option1">What is an average weight of maine coon male cat?</string>
+    <string name="question2_option2">What is an average weight of maine coon male cat?</string>
+    <string name="question2_option3">What is an average weight of maine coon male cat?</string>
+    <string name="question2_option4">What is an average weight of maine coon male cat?</string>
+    <string name="question3">3. Third question</string>
+    <string name="question3_option1">What is an average weight of maine coon male cat?</string>
+    <string name="question3_option2">What is an average weight of maine coon male cat?</string>
+    <string name="question3_option3">What is an average weight of maine coon male cat?</string>
+    <string name="question3_option4">What is an average weight of maine coon male cat?</string>
+    <string name="question4">4. Forth question</string>
+    <string name="question4_option1">What is an average weight of maine coon male cat?</string>
+    <string name="question4_option2">What is an average weight of maine coon male cat?</string>
+    <string name="question4_option3">What is an average weight of maine coon male cat?</string>
+    <string name="question4_option4">What is an average weight of maine coon male cat?</string>
+    <string name="question5">5. Fifth question</string>
+    <string name="question5_option1">What is an average weight of maine coon male cat?</string>
+    <string name="question5_option2">What is an average weight of maine coon male cat?</string>
+    <string name="question5_option3">What is an average weight of maine coon male cat?</string>
+    <string name="question5_option4">What is an average weight of maine coon male cat?</string>
+    <string name="question6">6. Sixth question</string>
+    <string name="question6_option1">What is an average weight of maine coon male cat?</string>
+    <string name="question6_option2">What is an average weight of maine coon male cat?</string>
+    <string name="question6_option3">What is an average weight of maine coon male cat?</string>
+    <string name="question6_option4">What is an average weight of maine coon male cat?</string>
+
 </resources>
