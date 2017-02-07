@@ -15,7 +15,9 @@ public class QuizActivity extends AppCompatActivity {
     private boolean question1Correct;
     private boolean question2Correct;
     private boolean question3_1Correct;
-    private boolean question3_2Correct;
+    private boolean question3_2Wrong;
+    private boolean question3_3Wrong;
+    private boolean question3_4Correct;
     private boolean question4Correct;
     private boolean question5Correct;
     private boolean question6Correct;
@@ -67,12 +69,12 @@ public class QuizActivity extends AppCompatActivity {
                     break;
             case R.id.radio_2_2:
                 if (checked)
-                    //incorrect answer, no points
+                    //correct answer, give some points
+                    question2Correct = true;
                     break;
             case R.id.radio_2_3:
                 if (checked)
-                    //correct answer, give some points
-                    question2Correct = true;
+                    //incorrect answer, no points
                 break;
             case R.id.radio_2_4:
                 if (checked)
@@ -97,15 +99,17 @@ public class QuizActivity extends AppCompatActivity {
             case R.id.check_3_2:
                 if (checked)
                     //incorrect answer, no points
+                    question3_2Wrong = true;
                     break;
             case R.id.check_3_3:
                 if (checked)
                     //correct answer, give some points
-                    question3_2Correct = true;
+                    question3_3Wrong = true;
                 break;
             case R.id.check_3_4:
                 if (checked)
                     //incorrect answer, no points
+                    question3_4Correct = true;
                     break;
         }
 
@@ -120,7 +124,8 @@ public class QuizActivity extends AppCompatActivity {
         switch (view.getId()) {
             case R.id.radio_4_1:
                 if (checked)
-                    //incorrect answer, no points
+                    //correct answer, give some points
+                    question4Correct = true;
                     break;
             case R.id.radio_4_2:
                 if (checked)
@@ -128,8 +133,7 @@ public class QuizActivity extends AppCompatActivity {
                     break;
             case R.id.radio_4_3:
                 if (checked)
-                    //correct answer, give some points
-                    question4Correct = true;
+                    //incorrect answer, no points
                 break;
             case R.id.radio_4_4:
                 if (checked)
@@ -199,13 +203,15 @@ public class QuizActivity extends AppCompatActivity {
     private int countResult() {
         int result = 0;
 
-        if (question1Correct) result += 1;
-        if (question2Correct) result += 1;
-        if (question3_1Correct) result += 1;
-        if (question3_2Correct) result += 1;
-        if (question4Correct) result += 1;
-        if (question5Correct) result += 1;
-        if (question6Correct) result += 1;
+        if (question1Correct) result += 12;
+        if (question2Correct) result += 12;
+        if (question3_1Correct) result += 10;
+        if (!question3_2Wrong) result += 10;
+        if (!question3_3Wrong) result += 10;
+        if (question3_4Correct) result += 10;
+        if (question4Correct) result += 12;
+        if (question5Correct) result += 12;
+        if (question6Correct) result += 12;
         return result;
 
     }
@@ -254,7 +260,7 @@ public class QuizActivity extends AppCompatActivity {
             intent.putExtra("RESULT", countResult());
             startActivity(intent);
         } else {
-            String userAlert = checkforUnanswered();
+            String userAlert = checkforUnanswered()+"%";
             Toast toast = Toast.makeText(getApplicationContext(), userAlert, Toast.LENGTH_LONG);
             toast.show();
         }
@@ -262,3 +268,5 @@ public class QuizActivity extends AppCompatActivity {
     }
 
 }
+
+

@@ -112,37 +112,41 @@
             android:layout_marginTop="@dimen/main_margin"
             android:text="@string/question3" />
 
-            <CheckBox
-                android:id="@+id/check_3_1"
-                style="@style/TextStyle_options"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:onClick="checkClickedQuestion3"
-                android:text="@string/question3_option1" />
+        <CheckBox
+            android:id="@+id/check_3_1"
+            style="@style/TextStyle_options"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="checkClickedQuestion3"
+            android:layout_marginBottom="8dp"
+            android:text="@string/question3_option1" />
 
-            <CheckBox
-                android:id="@+id/check_3_2"
-                style="@style/TextStyle_options"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:onClick="checkClickedQuestion3"
-                android:text="@string/question3_option2" />
+        <CheckBox
+            android:id="@+id/check_3_2"
+            style="@style/TextStyle_options"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="checkClickedQuestion3"
+            android:layout_marginBottom="8dp"
+            android:text="@string/question3_option2" />
 
-            <CheckBox
-                android:id="@+id/check_3_3"
-                style="@style/TextStyle_options"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:onClick="checkClickedQuestion3"
-                android:text="@string/question3_option3" />
+        <CheckBox
+            android:id="@+id/check_3_3"
+            style="@style/TextStyle_options"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="checkClickedQuestion3"
+            android:layout_marginBottom="8dp"
+            android:text="@string/question3_option3" />
 
-            <CheckBox
-                android:id="@+id/check_3_4"
-                style="@style/TextStyle_options"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:onClick="checkClickedQuestion3"
-                android:text="@string/question3_option4" />
+        <CheckBox
+            android:id="@+id/check_3_4"
+            style="@style/TextStyle_options"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="checkClickedQuestion3"
+            android:layout_marginBottom="8dp"
+            android:text="@string/question3_option4" />
 
 
         <TextView
@@ -293,7 +297,7 @@
             android:layout_marginBottom="48dp"
             android:layout_marginTop="@dimen/main_margin"
             android:onClick="checkResult"
-            android:text="@string/finish"/>
+            android:text="@string/finish" />
 
 
     </LinearLayout>

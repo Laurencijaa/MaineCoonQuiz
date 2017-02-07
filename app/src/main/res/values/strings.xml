@@ -5,35 +5,40 @@
     </string>
     <string name="start">start quiz</string>
     <string name="question1">1. What is an average weight of maine coon male cat?</string>
-    <string name="question1_option1">What is an average weight of maine coon male cat?</string>
-    <string name="question1_option2">What is an average weight of maine coon male cat?</string>
-    <string name="question1_option3">What is an average weight of maine coon male cat?</string>
-    <string name="question1_option4">What is an average weight of maine coon male cat?</string>
-    <string name="question2">2. Second question</string>
-    <string name="question2_option1">What is an average weight of maine coon male cat?</string>
-    <string name="question2_option2">What is an average weight of maine coon male cat?</string>
-    <string name="question2_option3">What is an average weight of maine coon male cat?</string>
-    <string name="question2_option4">What is an average weight of maine coon male cat?</string>
-    <string name="question3">3. Third question</string>
-    <string name="question3_option1">What is an average weight of maine coon male cat?</string>
-    <string name="question3_option2">What is an average weight of maine coon male cat?</string>
-    <string name="question3_option3">What is an average weight of maine coon male cat?</string>
-    <string name="question3_option4">What is an average weight of maine coon male cat?</string>
-    <string name="question4">4. Forth question</string>
-    <string name="question4_option1">What is an average weight of maine coon male cat?</string>
-    <string name="question4_option2">What is an average weight of maine coon male cat?</string>
-    <string name="question4_option3">What is an average weight of maine coon male cat?</string>
-    <string name="question4_option4">What is an average weight of maine coon male cat?</string>
-    <string name="question5">5. Fifth question</string>
-    <string name="question5_option1">What is an average weight of maine coon male cat?</string>
-    <string name="question5_option2">What is an average weight of maine coon male cat?</string>
-    <string name="question5_option3">What is an average weight of maine coon male cat?</string>
-    <string name="question5_option4">What is an average weight of maine coon male cat?</string>
-    <string name="question6">6. Sixth question</string>
-    <string name="question6_option1">What is an average weight of maine coon male cat?</string>
-    <string name="question6_option2">What is an average weight of maine coon male cat?</string>
-    <string name="question6_option3">What is an average weight of maine coon male cat?</string>
-    <string name="question6_option4">What is an average weight of maine coon male cat?</string>
+    <string name="question1_option1">4,3–5 kg</string>
+    <string name="question1_option2">11,5–15,5 kg</string>
+    <string name="question1_option3">6,8–11,3 kg</string>
+    <string name="question1_option4">20 kg</string>
+    <string name="question2">2. Maine Coon breed has a lot of color combinations. How many?</string>
+    <string name="question2_option1">200</string>
+    <string name="question2_option2">60</string>
+    <string name="question2_option3">20</string>
+    <string name="question2_option4">100</string>
+    <string name="question3">3. What is an origin of Maine Coon cat?</string>
+    <string name="question3_option1">Story says that captain Tom Coon collected cats.
+        While he was on shore in Maine these cats intermingled with local cats on shore.
+    </string>
+    <string name="question3_option2">Story tells that it is cross breed between cat and raccoon</string>
+    <string name="question3_option3">Story tells that this cat was once very big living in Maine area.
+        However due to globalization it's maine food source decreased and they started to change to smaller animals. </string>
+    <string name="question3_option4">Story tells that Maine Coon ancestor belonged to Marie Antoinetette.
+        Her cats managed to escape the French Revolution to Wiscasset, Maine.
+    </string>
+    <string name="question4">4. What is toxic food for cats?</string>
+    <string name="question4_option1">Grapes, Onions, Avocados</string>
+    <string name="question4_option2">Potatoes, Cabbages, Carrots</string>
+    <string name="question4_option3">Sea fish</string>
+    <string name="question4_option4">Apples and Melons</string>
+    <string name="question5">5. What is Maine Coon attitude to water?</string>
+    <string name="question5_option1">They, as most cats, hate water.</string>
+    <string name="question5_option2">They like to play with it and bath.</string>
+    <string name="question5_option3">They like to play with it but not bath.</string>
+    <string name="question5_option4">They are indifferent to water.</string>
+    <string name="question6">6. What is a lifespan of Maine Coon car?</string>
+    <string name="question6_option1">around 5 years</string>
+    <string name="question6_option2">around 10 years</string>
+    <string name="question6_option3">around 15 years</string>
+    <string name="question6_option4">around 20 years</string>
     <string name="finish">finish</string>
     <string name="score">your score:</string>
 
