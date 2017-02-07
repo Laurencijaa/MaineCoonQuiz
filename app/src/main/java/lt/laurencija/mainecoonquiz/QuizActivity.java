@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.CheckBox;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
@@ -13,7 +14,8 @@ public class QuizActivity extends AppCompatActivity {
 
     private boolean question1Correct;
     private boolean question2Correct;
-    private boolean question3Correct;
+    private boolean question3_1Correct;
+    private boolean question3_2Correct;
     private boolean question4Correct;
     private boolean question5Correct;
     private boolean question6Correct;
@@ -81,26 +83,27 @@ public class QuizActivity extends AppCompatActivity {
     }
 
     //Checking if correct option was picked for question 3
-    public void radioClickedQuestion3(View view) {
+    public void checkClickedQuestion3(View view) {
         // Is the button now checked?
-        boolean checked = ((RadioButton) view).isChecked();
+        boolean checked = ((CheckBox) view).isChecked();
 
         // Check which radio button was clicked
         switch (view.getId()) {
-            case R.id.radio_3_1:
-                if (checked)
-                    //incorrect answer, no points
-                    break;
-            case R.id.radio_3_2:
-                if (checked)
-                    //incorrect answer, no points
-                    break;
-            case R.id.radio_3_3:
+            case R.id.check_3_1:
                 if (checked)
                     //correct answer, give some points
-                    question3Correct = true;
+                    question3_1Correct = true;
+                    break;
+            case R.id.check_3_2:
+                if (checked)
+                    //incorrect answer, no points
+                    break;
+            case R.id.check_3_3:
+                if (checked)
+                    //correct answer, give some points
+                    question3_2Correct = true;
                 break;
-            case R.id.radio_3_4:
+            case R.id.check_3_4:
                 if (checked)
                     //incorrect answer, no points
                     break;
@@ -198,7 +201,8 @@ public class QuizActivity extends AppCompatActivity {
 
         if (question1Correct) result += 1;
         if (question2Correct) result += 1;
-        if (question3Correct) result += 1;
+        if (question3_1Correct) result += 1;
+        if (question3_2Correct) result += 1;
         if (question4Correct) result += 1;
         if (question5Correct) result += 1;
         if (question6Correct) result += 1;
@@ -216,8 +220,19 @@ public class QuizActivity extends AppCompatActivity {
         RadioGroup question2 = (RadioGroup) findViewById(R.id.question2);
         if (question2.getCheckedRadioButtonId() == -1) userAlert += "\nPlease answer question 2";
 
-        RadioGroup question3 = (RadioGroup) findViewById(R.id.question3);
-        if (question3.getCheckedRadioButtonId() == -1) userAlert += "\nPlease answer question 3";
+        CheckBox qyestion3_1 = (CheckBox)findViewById(R.id.check_3_1);
+        CheckBox qyestion3_2 = (CheckBox)findViewById(R.id.check_3_2);
+        CheckBox qyestion3_3 = (CheckBox)findViewById(R.id.check_3_3);
+        CheckBox qyestion3_4 = (CheckBox)findViewById(R.id.check_3_4);
+        if (!qyestion3_1.isChecked()){
+            if (!qyestion3_2.isChecked()){
+                if (!qyestion3_3.isChecked()){
+                    if (!qyestion3_4.isChecked()){
+                        userAlert += "\nPlease answer question 3";
+                    }
+                }
+            }
+        }
 
         RadioGroup question4 = (RadioGroup) findViewById(R.id.question4);
         if (question4.getCheckedRadioButtonId() == -1) userAlert += "\nPlease answer question 4";
