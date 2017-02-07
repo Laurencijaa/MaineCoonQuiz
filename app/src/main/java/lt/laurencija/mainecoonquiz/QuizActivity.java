@@ -257,10 +257,10 @@ public class QuizActivity extends AppCompatActivity {
 
         if (checkforUnanswered().equals("")) {
             Intent intent = new Intent(this, AnswerActivity.class);
-            intent.putExtra("RESULT", countResult());
+            intent.putExtra("RESULT", countResult()+"%");
             startActivity(intent);
         } else {
-            String userAlert = checkforUnanswered()+"%";
+            String userAlert = checkforUnanswered();
             Toast toast = Toast.makeText(getApplicationContext(), userAlert, Toast.LENGTH_LONG);
             toast.show();
         }

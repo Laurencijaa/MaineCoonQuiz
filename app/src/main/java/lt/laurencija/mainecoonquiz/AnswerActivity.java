@@ -15,8 +15,8 @@ public class AnswerActivity extends AppCompatActivity {
         Bundle extras = getIntent().getExtras();
         if (extras != null){
             TextView resultView = (TextView) findViewById(R.id.result);
-            int finalResult = extras.getInt("RESULT");
-            resultView.setText(Integer.toString(finalResult));
+            String finalResult = extras.getString("RESULT");
+            resultView.setText(finalResult);
         }
     }
 }
