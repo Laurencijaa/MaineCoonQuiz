@@ -92,12 +92,12 @@ public class QuizActivity extends AppCompatActivity {
                     break;
             case R.id.radio_1_2:
                 if (checked)
-                    //incorrect answer, no points
+                    //correct answer, give some points
+                    question1Correct = true;
                     break;
             case R.id.radio_1_3:
                 if (checked)
-                    //correct answer, give some points
-                    question1Correct = true;
+                    //incorrect answer, no points
                 break;
             case R.id.radio_1_4:
                 if (checked)

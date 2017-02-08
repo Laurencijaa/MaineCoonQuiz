@@ -5,10 +5,10 @@
     </string>
     <string name="start">start quiz</string>
     <string name="question1">1. What is an average weight of maine coon male cat?</string>
-    <string name="question1_option1">4,3–5 kg</string>
-    <string name="question1_option2">11,5–15,5 kg</string>
-    <string name="question1_option3">6,8–11,3 kg</string>
-    <string name="question1_option4">20 kg</string>
+    <string name="question1_option1">4,3–6,8 kg</string>
+    <string name="question1_option2">6,8–11,3 kg</string>
+    <string name="question1_option3">11,3–18 kg</string>
+    <string name="question1_option4">18 kg and more</string>
     <string name="question2">2. Maine Coon breed has a lot of color combinations. How many?</string>
     <string name="question2_option1">200</string>
     <string name="question2_option2">60</string>
