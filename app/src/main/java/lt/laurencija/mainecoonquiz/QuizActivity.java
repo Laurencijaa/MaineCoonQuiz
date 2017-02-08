@@ -51,6 +51,32 @@ public class QuizActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.quiz_screen);
+
+        // Checking information of all radio buttons and check boxes
+        radio1_1 = (RadioButton) findViewById(R.id.radio_1_1);
+        radio1_2 = (RadioButton) findViewById(R.id.radio_1_2);
+        radio1_3 = (RadioButton) findViewById(R.id.radio_1_3);
+        radio1_4 = (RadioButton) findViewById(R.id.radio_1_4);
+        radio2_1 = (RadioButton) findViewById(R.id.radio_2_1);
+        radio2_2 = (RadioButton) findViewById(R.id.radio_2_2);
+        radio2_3 = (RadioButton) findViewById(R.id.radio_2_3);
+        radio2_4 = (RadioButton) findViewById(R.id.radio_2_4);
+        check3_1 = (CheckBox) findViewById(R.id.check_3_1);
+        check3_2 = (CheckBox) findViewById(R.id.check_3_2);
+        check3_3 = (CheckBox) findViewById(R.id.check_3_3);
+        check3_4 = (CheckBox) findViewById(R.id.check_3_4);
+        radio4_1 = (RadioButton) findViewById(R.id.radio_4_1);
+        radio4_2 = (RadioButton) findViewById(R.id.radio_4_2);
+        radio4_3 = (RadioButton) findViewById(R.id.radio_4_3);
+        radio4_4 = (RadioButton) findViewById(R.id.radio_4_4);
+        radio5_1 = (RadioButton) findViewById(R.id.radio_5_1);
+        radio5_2 = (RadioButton) findViewById(R.id.radio_5_2);
+        radio5_3 = (RadioButton) findViewById(R.id.radio_5_3);
+        radio5_4 = (RadioButton) findViewById(R.id.radio_5_4);
+        radio6_1 = (RadioButton) findViewById(R.id.radio_6_1);
+        radio6_2 = (RadioButton) findViewById(R.id.radio_6_2);
+        radio6_3 = (RadioButton) findViewById(R.id.radio_6_3);
+        radio6_4 = (RadioButton) findViewById(R.id.radio_6_4);
     }
 
     //Checking if correct option was picked for question 1
@@ -295,32 +321,6 @@ public class QuizActivity extends AppCompatActivity {
     @Override
     public void onSaveInstanceState(Bundle savedInstanceState) {
 
-        // Checking information of all radio buttons and check boxes
-        radio1_1 = (RadioButton) findViewById(R.id.radio_1_1);
-        radio1_2 = (RadioButton) findViewById(R.id.radio_1_2);
-        radio1_3 = (RadioButton) findViewById(R.id.radio_1_3);
-        radio1_4 = (RadioButton) findViewById(R.id.radio_1_4);
-        radio2_1 = (RadioButton) findViewById(R.id.radio_2_1);
-        radio2_2 = (RadioButton) findViewById(R.id.radio_2_2);
-        radio2_3 = (RadioButton) findViewById(R.id.radio_2_3);
-        radio2_4 = (RadioButton) findViewById(R.id.radio_2_4);
-        check3_1 = (CheckBox) findViewById(R.id.check_3_1);
-        check3_2 = (CheckBox) findViewById(R.id.check_3_2);
-        check3_3 = (CheckBox) findViewById(R.id.check_3_3);
-        check3_4 = (CheckBox) findViewById(R.id.check_3_4);
-        radio4_1 = (RadioButton) findViewById(R.id.radio_4_1);
-        radio4_2 = (RadioButton) findViewById(R.id.radio_4_2);
-        radio4_3 = (RadioButton) findViewById(R.id.radio_4_3);
-        radio4_4 = (RadioButton) findViewById(R.id.radio_4_4);
-        radio5_1 = (RadioButton) findViewById(R.id.radio_5_1);
-        radio5_2 = (RadioButton) findViewById(R.id.radio_5_2);
-        radio5_3 = (RadioButton) findViewById(R.id.radio_5_3);
-        radio5_4 = (RadioButton) findViewById(R.id.radio_5_4);
-        radio6_1 = (RadioButton) findViewById(R.id.radio_6_1);
-        radio6_2 = (RadioButton) findViewById(R.id.radio_6_2);
-        radio6_3 = (RadioButton) findViewById(R.id.radio_6_3);
-        radio6_4 = (RadioButton) findViewById(R.id.radio_6_4);
-
         savedInstanceState.putBoolean("question 1-1", radio1_1.isChecked());
         savedInstanceState.putBoolean("question 1-2", radio1_2.isChecked());
         savedInstanceState.putBoolean("question 1-3", radio1_3.isChecked());
@@ -354,32 +354,6 @@ public class QuizActivity extends AppCompatActivity {
     public void onRestoreInstanceState(Bundle savedInstanceState) {
         // Always call the superclass so it can restore the view hierarchy
         super.onRestoreInstanceState(savedInstanceState);
-
-        // Checking information of all radio buttons and check boxes
-        radio1_1 = (RadioButton) findViewById(R.id.radio_1_1);
-        radio1_2 = (RadioButton) findViewById(R.id.radio_1_2);
-        radio1_3 = (RadioButton) findViewById(R.id.radio_1_3);
-        radio1_4 = (RadioButton) findViewById(R.id.radio_1_4);
-        radio2_1 = (RadioButton) findViewById(R.id.radio_2_1);
-        radio2_2 = (RadioButton) findViewById(R.id.radio_2_2);
-        radio2_3 = (RadioButton) findViewById(R.id.radio_2_3);
-        radio2_4 = (RadioButton) findViewById(R.id.radio_2_4);
-        check3_1 = (CheckBox) findViewById(R.id.check_3_1);
-        check3_2 = (CheckBox) findViewById(R.id.check_3_2);
-        check3_3 = (CheckBox) findViewById(R.id.check_3_3);
-        check3_4 = (CheckBox) findViewById(R.id.check_3_4);
-        radio4_1 = (RadioButton) findViewById(R.id.radio_4_1);
-        radio4_2 = (RadioButton) findViewById(R.id.radio_4_2);
-        radio4_3 = (RadioButton) findViewById(R.id.radio_4_3);
-        radio4_4 = (RadioButton) findViewById(R.id.radio_4_4);
-        radio5_1 = (RadioButton) findViewById(R.id.radio_5_1);
-        radio5_2 = (RadioButton) findViewById(R.id.radio_5_2);
-        radio5_3 = (RadioButton) findViewById(R.id.radio_5_3);
-        radio5_4 = (RadioButton) findViewById(R.id.radio_5_4);
-        radio6_1 = (RadioButton) findViewById(R.id.radio_6_1);
-        radio6_2 = (RadioButton) findViewById(R.id.radio_6_2);
-        radio6_3 = (RadioButton) findViewById(R.id.radio_6_3);
-        radio6_4 = (RadioButton) findViewById(R.id.radio_6_4);
 
         //Set all radio buttons and check boxes from saves instance state
         radio1_1.setChecked(savedInstanceState.getBoolean("question 1-1"));
