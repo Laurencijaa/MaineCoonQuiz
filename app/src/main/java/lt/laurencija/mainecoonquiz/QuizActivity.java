@@ -272,10 +272,10 @@ public class QuizActivity extends AppCompatActivity {
         String userAlert = "";
 
         RadioGroup question1 = (RadioGroup) findViewById(R.id.question1);
-        if (question1.getCheckedRadioButtonId() == -1) userAlert += "Please answer question 1";
+        if (question1.getCheckedRadioButtonId() == -1) userAlert += "Please answer question 1\n";
 
         RadioGroup question2 = (RadioGroup) findViewById(R.id.question2);
-        if (question2.getCheckedRadioButtonId() == -1) userAlert += "\nPlease answer question 2";
+        if (question2.getCheckedRadioButtonId() == -1) userAlert += "Please answer question 2\n";
 
         CheckBox qyestion3_1 = (CheckBox)findViewById(R.id.check_3_1);
         CheckBox qyestion3_2 = (CheckBox)findViewById(R.id.check_3_2);
@@ -285,20 +285,20 @@ public class QuizActivity extends AppCompatActivity {
             if (!qyestion3_2.isChecked()){
                 if (!qyestion3_3.isChecked()){
                     if (!qyestion3_4.isChecked()){
-                        userAlert += "\nPlease answer question 3";
+                        userAlert += "Please answer question 3\n";
                     }
                 }
             }
         }
 
         RadioGroup question4 = (RadioGroup) findViewById(R.id.question4);
-        if (question4.getCheckedRadioButtonId() == -1) userAlert += "\nPlease answer question 4";
+        if (question4.getCheckedRadioButtonId() == -1) userAlert += "Please answer question 4\n";
 
         RadioGroup question5 = (RadioGroup) findViewById(R.id.question5);
-        if (question5.getCheckedRadioButtonId() == -1) userAlert += "\nPlease answer question 5";
+        if (question5.getCheckedRadioButtonId() == -1) userAlert += "Please answer question 5\n";
 
         RadioGroup question6 = (RadioGroup) findViewById(R.id.question6);
-        if (question6.getCheckedRadioButtonId() == -1) userAlert += "\nPlease answer question 6";
+        if (question6.getCheckedRadioButtonId() == -1) userAlert += "Please answer question 6";
 
         return userAlert;
 
