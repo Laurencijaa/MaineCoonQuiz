@@ -1,5 +1,6 @@
 package lt.laurencija.mainecoonquiz;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
@@ -35,5 +36,11 @@ public class AnswerActivity extends AppCompatActivity {
         super.onRestoreInstanceState(savedInstanceState);
         resultView.setText(savedInstanceState.getString("result"));
 
+    }
+
+    @Override
+    public void onBackPressed() {
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
     }
 }
