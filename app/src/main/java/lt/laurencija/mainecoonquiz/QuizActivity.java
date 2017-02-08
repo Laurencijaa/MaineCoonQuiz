@@ -21,6 +21,31 @@ public class QuizActivity extends AppCompatActivity {
     private boolean question4Correct;
     private boolean question5Correct;
     private boolean question6Correct;
+    private RadioButton radio1_1;
+    private RadioButton radio1_2;
+    private RadioButton radio1_3;
+    private RadioButton radio1_4;
+    private RadioButton radio2_1;
+    private RadioButton radio2_2;
+    private RadioButton radio2_3;
+    private RadioButton radio2_4;
+    private CheckBox check3_1;
+    private CheckBox check3_2;
+    private CheckBox check3_3;
+    private CheckBox check3_4;
+    private RadioButton radio4_1;
+    private RadioButton radio4_2;
+    private RadioButton radio4_3;
+    private RadioButton radio4_4;
+    private RadioButton radio5_1;
+    private RadioButton radio5_2;
+    private RadioButton radio5_3;
+    private RadioButton radio5_4;
+    private RadioButton radio6_1;
+    private RadioButton radio6_2;
+    private RadioButton radio6_3;
+    private RadioButton radio6_4;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -264,6 +289,125 @@ public class QuizActivity extends AppCompatActivity {
             Toast toast = Toast.makeText(getApplicationContext(), userAlert, Toast.LENGTH_LONG);
             toast.show();
         }
+
+    }
+
+    @Override
+    public void onSaveInstanceState(Bundle savedInstanceState) {
+
+        // Checking information of all radio buttons and check boxes
+        radio1_1 = (RadioButton) findViewById(R.id.radio_1_1);
+        radio1_2 = (RadioButton) findViewById(R.id.radio_1_2);
+        radio1_3 = (RadioButton) findViewById(R.id.radio_1_3);
+        radio1_4 = (RadioButton) findViewById(R.id.radio_1_4);
+        radio2_1 = (RadioButton) findViewById(R.id.radio_2_1);
+        radio2_2 = (RadioButton) findViewById(R.id.radio_2_2);
+        radio2_3 = (RadioButton) findViewById(R.id.radio_2_3);
+        radio2_4 = (RadioButton) findViewById(R.id.radio_2_4);
+        check3_1 = (CheckBox) findViewById(R.id.check_3_1);
+        check3_2 = (CheckBox) findViewById(R.id.check_3_2);
+        check3_3 = (CheckBox) findViewById(R.id.check_3_3);
+        check3_4 = (CheckBox) findViewById(R.id.check_3_4);
+        radio4_1 = (RadioButton) findViewById(R.id.radio_4_1);
+        radio4_2 = (RadioButton) findViewById(R.id.radio_4_2);
+        radio4_3 = (RadioButton) findViewById(R.id.radio_4_3);
+        radio4_4 = (RadioButton) findViewById(R.id.radio_4_4);
+        radio5_1 = (RadioButton) findViewById(R.id.radio_5_1);
+        radio5_2 = (RadioButton) findViewById(R.id.radio_5_2);
+        radio5_3 = (RadioButton) findViewById(R.id.radio_5_3);
+        radio5_4 = (RadioButton) findViewById(R.id.radio_5_4);
+        radio6_1 = (RadioButton) findViewById(R.id.radio_6_1);
+        radio6_2 = (RadioButton) findViewById(R.id.radio_6_2);
+        radio6_3 = (RadioButton) findViewById(R.id.radio_6_3);
+        radio6_4 = (RadioButton) findViewById(R.id.radio_6_4);
+
+        savedInstanceState.putBoolean("question 1-1", radio1_1.isChecked());
+        savedInstanceState.putBoolean("question 1-2", radio1_2.isChecked());
+        savedInstanceState.putBoolean("question 1-3", radio1_3.isChecked());
+        savedInstanceState.putBoolean("question 1-4", radio1_4.isChecked());
+        savedInstanceState.putBoolean("question 2-1", radio2_1.isChecked());
+        savedInstanceState.putBoolean("question 2-2", radio2_2.isChecked());
+        savedInstanceState.putBoolean("question 2-3", radio2_3.isChecked());
+        savedInstanceState.putBoolean("question 2-4", radio2_4.isChecked());
+        savedInstanceState.putBoolean("question 3-1", check3_1.isChecked());
+        savedInstanceState.putBoolean("question 3-2", check3_2.isChecked());
+        savedInstanceState.putBoolean("question 3-3", check3_3.isChecked());
+        savedInstanceState.putBoolean("question 3-4", check3_4.isChecked());
+        savedInstanceState.putBoolean("question 4-1", radio4_1.isChecked());
+        savedInstanceState.putBoolean("question 4-2", radio4_2.isChecked());
+        savedInstanceState.putBoolean("question 4-3", radio4_3.isChecked());
+        savedInstanceState.putBoolean("question 4-4", radio4_4.isChecked());
+        savedInstanceState.putBoolean("question 5-1", radio5_1.isChecked());
+        savedInstanceState.putBoolean("question 5-2", radio5_2.isChecked());
+        savedInstanceState.putBoolean("question 5-3", radio5_3.isChecked());
+        savedInstanceState.putBoolean("question 5-4", radio5_4.isChecked());
+        savedInstanceState.putBoolean("question 6-1", radio6_1.isChecked());
+        savedInstanceState.putBoolean("question 6-2", radio6_2.isChecked());
+        savedInstanceState.putBoolean("question 6-3", radio6_3.isChecked());
+        savedInstanceState.putBoolean("question 6-4", radio6_4.isChecked());
+
+        // Always call the superclass so it can save the view hierarchy state
+        super.onSaveInstanceState(savedInstanceState);
+    }
+
+    @Override
+    public void onRestoreInstanceState(Bundle savedInstanceState) {
+        // Always call the superclass so it can restore the view hierarchy
+        super.onRestoreInstanceState(savedInstanceState);
+
+        // Checking information of all radio buttons and check boxes
+        radio1_1 = (RadioButton) findViewById(R.id.radio_1_1);
+        radio1_2 = (RadioButton) findViewById(R.id.radio_1_2);
+        radio1_3 = (RadioButton) findViewById(R.id.radio_1_3);
+        radio1_4 = (RadioButton) findViewById(R.id.radio_1_4);
+        radio2_1 = (RadioButton) findViewById(R.id.radio_2_1);
+        radio2_2 = (RadioButton) findViewById(R.id.radio_2_2);
+        radio2_3 = (RadioButton) findViewById(R.id.radio_2_3);
+        radio2_4 = (RadioButton) findViewById(R.id.radio_2_4);
+        check3_1 = (CheckBox) findViewById(R.id.check_3_1);
+        check3_2 = (CheckBox) findViewById(R.id.check_3_2);
+        check3_3 = (CheckBox) findViewById(R.id.check_3_3);
+        check3_4 = (CheckBox) findViewById(R.id.check_3_4);
+        radio4_1 = (RadioButton) findViewById(R.id.radio_4_1);
+        radio4_2 = (RadioButton) findViewById(R.id.radio_4_2);
+        radio4_3 = (RadioButton) findViewById(R.id.radio_4_3);
+        radio4_4 = (RadioButton) findViewById(R.id.radio_4_4);
+        radio5_1 = (RadioButton) findViewById(R.id.radio_5_1);
+        radio5_2 = (RadioButton) findViewById(R.id.radio_5_2);
+        radio5_3 = (RadioButton) findViewById(R.id.radio_5_3);
+        radio5_4 = (RadioButton) findViewById(R.id.radio_5_4);
+        radio6_1 = (RadioButton) findViewById(R.id.radio_6_1);
+        radio6_2 = (RadioButton) findViewById(R.id.radio_6_2);
+        radio6_3 = (RadioButton) findViewById(R.id.radio_6_3);
+        radio6_4 = (RadioButton) findViewById(R.id.radio_6_4);
+
+        //Set all radio buttons and check boxes from saves instance state
+        radio1_1.setChecked(savedInstanceState.getBoolean("question 1-1"));
+        radio1_2.setChecked(savedInstanceState.getBoolean("question 1-2"));
+        radio1_3.setChecked(savedInstanceState.getBoolean("question 1-3"));
+        radio1_4.setChecked(savedInstanceState.getBoolean("question 1-4"));
+        radio2_1.setChecked(savedInstanceState.getBoolean("question 2-1"));
+        radio2_2.setChecked(savedInstanceState.getBoolean("question 2-2"));
+        radio2_3.setChecked(savedInstanceState.getBoolean("question 2-3"));
+        radio2_4.setChecked(savedInstanceState.getBoolean("question 2-4"));
+        check3_1.setChecked(savedInstanceState.getBoolean("question 3-1"));
+        check3_2.setChecked(savedInstanceState.getBoolean("question 3-2"));
+        check3_3.setChecked(savedInstanceState.getBoolean("question 3-3"));
+        check3_4.setChecked(savedInstanceState.getBoolean("question 3-4"));
+        radio4_1.setChecked(savedInstanceState.getBoolean("question 4-1"));
+        radio4_2.setChecked(savedInstanceState.getBoolean("question 4-2"));
+        radio4_3.setChecked(savedInstanceState.getBoolean("question 4-3"));
+        radio4_4.setChecked(savedInstanceState.getBoolean("question 4-4"));
+        radio5_1.setChecked(savedInstanceState.getBoolean("question 5-1"));
+        radio5_2.setChecked(savedInstanceState.getBoolean("question 5-2"));
+        radio5_3.setChecked(savedInstanceState.getBoolean("question 5-3"));
+        radio5_4.setChecked(savedInstanceState.getBoolean("question 5-4"));
+        radio6_1.setChecked(savedInstanceState.getBoolean("question 6-1"));
+        radio6_2.setChecked(savedInstanceState.getBoolean("question 6-2"));
+        radio6_3.setChecked(savedInstanceState.getBoolean("question 6-3"));
+        radio6_4.setChecked(savedInstanceState.getBoolean("question 6-4"));
+
+
 
     }
 
